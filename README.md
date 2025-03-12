@@ -5,6 +5,10 @@ Model Context Protocol server for Trino, providing AI models with structured acc
 ⚠️ **BETA RELEASE (v0.1.2)** ⚠️  
 This project is stabilizing with core features working and tested. Feel free to fork and contribute!
 
+<a href="https://glama.ai/mcp/servers/j0qhebd1qw">
+  <img width="380" height="200" src="https://glama.ai/mcp/servers/j0qhebd1qw/badge" alt="Trino Server MCP server" />
+</a>
+
 ## Features
 
 - ✅ Fixed Docker container API initialization issue! (reliable server initalization)
@@ -524,7 +528,7 @@ The standalone API defaults to port 8008 to avoid conflicts. If you see an "addr
    ```
 
 2. Run with a custom port via command line:
-   ```bash
+   ```python
    python -c "import llm_trino_api; import uvicorn; uvicorn.run(llm_trino_api.app, host='127.0.0.1', port=8009)"
    ```
 
